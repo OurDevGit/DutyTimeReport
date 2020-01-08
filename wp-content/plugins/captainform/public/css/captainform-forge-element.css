@@ -1,0 +1,48 @@
+.forge-builder-collection-icon-captainform {
+    background: url(../../admin/images/captainform-32.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.forge-captainform-form-placeholder {
+    position: relative;
+    background: rgba(0,0,0,0.08);
+    width: 100%;
+    padding-top: 60%;
+    border-radius: 3px;
+}
+
+.forge-captainform-form-placeholder::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -70px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #999;
+    font-size: 30px;
+    content: 'FORM';
+}
+
+
+/* CAPTAINFORM FIELDS */
+.forge-captainform-field { display:block; overflow:hidden; }
+.forge-captainform-field .forge-captainform-preview { border:3px solid #fff; background:#fff; margin:0 0 5px; }
+.forge-captainform-field-empty .forge-captainform-preview { display:none; }
+.forge-captainform-preview img { display:block; margin:0 auto; width:auto; max-width:100%; height:auto; }
+.forge-captainform-field .forge-captainform-field-placeholder { display:none; background:#fff; margin:0 0 5px; padding:10px 20px; text-align:center; text-transform:uppercase; color:#999; }
+.forge-captainform-field-empty .forge-captainform-field-placeholder { display:block; }
+/* Controls */
+.forge-captainform-field .forge-captainform-field-url { display:none; padding:0; margin:0; }
+.forge-captainform-field .forge-captainform-field-controls { padding:0; margin:0; }
+.forge-captainform-field-custom-url .forge-captainform-field-controls { display:none; }
+.forge-captainform-field-custom-url .forge-captainform-field-url { display:block; }
+/* Buttons */
+.forge-captainform-field .forge-captainform-field-button { display:block; margin:0; font-weight:bold; float:left; padding:0; width:100%; text-align:center; color:#666; background:#fff; cursor:pointer; border-radius:0; font-size:14px; line-height:30px; height:30px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+.forge-captainform-field .forge-captainform-create { display:block; border-right:1px solid #eee; }
+.forge-captainform-field .forge-captainform-url { display:block; border-right:1px solid #eee; }
+.forge-captainform-field .forge-captainform-remove { color:#f44; width:20%; }
+.forge-captainform-field .forge-captainform-cancel { color:#f44; width:30%; }
+.forge-captainform-field .forge-captainform-save { border-right:1px solid #eee; width:70%; }

@@ -1,0 +1,100 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.captainform_lightbox {
+    outline: none !important;
+    text-decoration: none;
+    border: none;
+    box-shadow: none !important;
+}
+
+.captainform_lightbox img {
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.captainform_lightbox[floating] {
+    position: fixed;
+    padding: 12px;
+    margin:0;
+    cursor: pointer;
+    line-height: 1em;
+    z-index: 100;
+    -webkit-transition: padding .2s;
+    -o-transition: padding .2s;
+    transition: padding .2s;
+}
+
+
+.captainform_lightbox[image] a,
+.captainform_lightbox[image] a:hover,
+.captainform_lightbox[floating] a,
+.captainform_lightbox[floating] a:hover {
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+}
+
+.captainform_lightbox[floating]:hover {
+    opacity: .93;
+}
+
+.captainform_lightbox[floating].default {
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.captainform_lightbox[floating].left,
+.captainform_lightbox[floating].right {
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.captainform_lightbox[floating].left {
+    left: 0;
+    top: 40%;
+    border-radius: 0 0 4px 4px;
+    -moz-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.captainform_lightbox[floating].left:hover {
+    /*padding-top: 16px;*/
+}
+
+.captainform_lightbox[floating].right {
+    right: 0;
+    top: 40%;
+    border-radius: 4px 4px 0 0;
+    -moz-transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+    -o-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+
+.captainform_lightbox[floating].right:hover {
+    /* TODO: Fix right button animation */
+    /*padding-bottom: 16px;*/
+}
+
+.captainform_lightbox[floating].bottom {
+    width: auto;
+    right: 20%;
+    bottom: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.captainform_lightbox[floating].bottom:hover {
+    /*padding-bottom: 16px;*/
+}
