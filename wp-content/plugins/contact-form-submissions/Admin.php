@@ -1,4 +1,5 @@
 <?php
+
 class WPCF7SAdmin
 {
     public function __construct()
@@ -128,7 +129,11 @@ class WPCF7SAdmin
                         for($i=1; $i<13; $i++)
                         { 
                             $selected = ($i == $_GET['selectMonth']) ? 'selected' : ''; 
+                            if(strlen($i) == 1){
+                                $i = "0".$i;
+                            }
                             ?>
+
                             <option value="<?php echo $i; ?>" <?php echo $selected; ?>><?php echo $i; ?></option>
                         <?php }
                     ?>
